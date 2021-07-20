@@ -1,0 +1,392 @@
+/* 清除默认样式 */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+ul,ol{
+	list-style: none;
+}
+img{
+	display: block;
+}
+a{
+	text-decoration: none;
+}
+.d-flex{
+	display: flex;
+}
+
+/* 顶部样式 */
+.top{
+	width: 100%;
+	min-width: 1190px;
+	height: 40px;
+	background-color: #e3e4e5;
+	border-bottom:1px solid #ddd;
+	line-height: 40px;
+}
+/* 版心 */
+.main{
+	position: relative;
+	width: 1190px;
+	margin: 0 auto;
+}
+.top .main{
+	justify-content: space-between;
+}
+/* 定位 */
+.topPos{
+	color:#999;	
+}
+.topPos h3{
+	font-weight: normal;
+	font-size: 12px;
+}
+.topPos h3 i{
+	color:#f10215;
+	margin-right:3px;
+	font-size: 14px;
+	position: relative;
+	top:2px;
+}
+/* 顶部导航 */
+.topNav ul{
+	display: flex;
+}
+.topNav ul>li{
+	position: relative;
+	box-sizing: border-box;
+}
+.topNav ul>li h2{
+	padding:0 5px;
+	line-height:32px;
+	height: 39px;
+	border:1px solid #e3e4e5;
+}
+.topNav ul>li a{
+	color:#999;
+	font-size: 12px;
+	font-weight: normal;
+	padding:0 10px;
+}
+.topNav ul>li h2 a{
+	padding:0;
+}
+.topNav ul>li.space:before{
+	content: "|";
+	font-size: 12px;
+	color:#aaa;
+	margin:0 5px;
+}
+
+.topNav ul>li.itemNav h2 i{
+	font-size: 10px;
+	color:#999;
+	padding-left:5px;
+}
+.topNav ul>li .itemList{
+	display: none;
+	position: absolute;
+	z-index: 1;
+	top: 40px;
+	border:1px solid #ddd;
+	background-color: #fff;
+}
+.topNav ul>li .itemList ol{
+	padding:5px 15px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.topNav ul>li .itemList ol li{
+	line-height: 25px;
+}
+.topNav ul>li.myJd .itemList{
+	width: 200px;
+}
+.topNav ul>li.myJd .itemList ol:nth-child(2){
+	border-top:1px solid #ddd;
+}
+.topNav ul>li.businessBuy .itemList{
+	width: 180px;
+}
+.topNav ul>li.customerService .itemList{
+	width: 180px;
+	right:0;
+}
+.topNav ul>li.webNav{
+	position: static;
+}
+.topNav ul>li.webNav .itemList{
+	width: 1190px;
+	right:0;
+}
+.topNav ul>li.customerService .itemList h3{
+	font-size: 14px;
+	color:#666;
+	padding-left:15px;
+}
+.topNav ul>li:hover h2{
+	position: relative;
+	z-index: 2;
+	top:0;
+	border:1px solid #ddd;
+	border-bottom:1px solid #fff;
+	background-color: #fff;
+}
+.topNav ul>li a:hover{
+	color:#f10215;
+}
+.topNav ul>li:hover .itemList{
+	display: block;
+}
+
+
+
+/* 导航 */
+.header{
+	width: 100%;
+	height: 175px;
+	min-width: 1190px;
+	background-color: #fff;
+}
+.header .main{
+	justify-content: space-between;
+}
+
+/* logol */
+.logol{
+	width: 238px;
+	height: 130px;
+	box-sizing: border-box;
+	padding:25px 0px;
+	background-image: url(../img/logol.png);
+	background-repeat: no-repeat;
+	background-origin: content-box;
+}
+
+/* 搜索 */
+.middle{
+	flex:1;
+	padding-top:30px;
+}
+.searchaCar{
+	display: flex;
+}
+.search{
+	width: 549px;
+	height: 40px;
+	border:2px solid #e1251b;
+	display: flex;
+	justify-content: space-between;
+	margin-right:20px;
+}
+
+.search input{
+	line-height: 40px;
+	padding:0 20px;
+	border:none;
+	width: 355px;
+}
+.search .icon-xiangji{
+	padding:0 20px;
+	line-height: 40px;
+}
+.search button{
+	width: 72px;
+	height: 40px;
+	border:none;
+	background-color:#e1251b;
+}
+.search button i{
+	color:#fff;
+}
+.shopCar{
+	position: relative;
+	width: 160px;
+	border:1px solid #999;
+	line-height: 40px;
+	color:#e1251b;
+}
+.shopCar span{
+	display: block;
+	position: absolute;
+	left:30px;
+	background-color:#e1251b;
+	color:#fff;
+	width: 20px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	border-radius: 50%;
+}
+.shopCar i{	
+	padding:0 20px;
+}
+.nav{
+	margin-top: 70px;
+}
+.nav ul{
+	display: flex;
+}
+.nav ul li{
+	font-size: 16px;
+	padding:0 5px;
+}
+.nav ul li a{
+	color:#343434;
+}
+.nav ul li:nth-child(1) a,.nav ul li:nth-child(2) a{
+	font-weight: 600;
+	color:#e1251b;
+}
+
+/* 二维码 */
+.navImg{
+	width: 238px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+.navImg .imgBox{
+	box-shadow: 0 0 10px #ddd;
+	padding:6px;
+	background-color: #fff;
+}
+.navImg .imgBox img{
+	width: 83px;
+}
+
+/* 首屏 */
+.con{
+	width: 100%;
+	min-width: 1190px;
+	background-color: #e3e4e5;
+	border-top:1px solid #ddd;
+}
+.asideNav{
+	width: 190px;
+	height: 470px;
+	background-color: #fff;
+}
+.banner{
+	width: 590px;
+	height: 470px;
+	background: url(../img/banner.jpg) no-repeat;
+	margin:0 10px;
+}
+.ad{
+	width: 190px;
+	height: 470px;
+}
+.ad img{
+	width: 100%;
+	margin-bottom: 9px;
+}
+.ad img:nth-child(3){
+	margin-bottom:0;
+}
+.login{
+	margin-left:10px;
+	width: 190px;
+	height: 470px;
+	background-color: #fff;
+}
+
+/* 为你推荐 */
+.list{
+	padding-top:10px;
+	width: 100%;
+	min-width: 1190px;
+	background-color: #e3e4e5;
+}
+.list ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.list ul li{
+	position: relative;
+	width: 230px;
+	height: 320px;
+	margin-bottom: 20px;
+	background-color: #fff;
+}
+.list ul li .thumb{
+	margin: 30px auto;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+}
+.list ul li .thumb img{
+	width: 100%;
+}
+.list ul li h2{
+	font-weight: normal;
+	color:#666;
+	font-size: 14px;
+	padding:0 15px;
+	line-height: 25px;
+}
+.list ul li p{
+	color:#e1251b;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 40px;
+	padding-left:15px;
+}
+.list ul li p span{
+	font-size: 12px;
+}
+.list ul li .btn{
+	display: none;
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom,rgba(255,255,255,0) 70%,rgba(255,255,255,1) 85%);
+}
+.list ul li .btn .close{
+	position: absolute;
+	right:15px;
+	top:15px;
+	width: 20px;
+	height: 20px;
+	color:#666;
+}
+.list ul li .btn .more{
+	position: absolute;
+	bottom:20px;
+	left:55px;
+	margin:0 auto;
+	width: 120px;
+	height: 28px;
+	line-height: 28px;
+	border-radius: 14px;
+	background-color: #000;
+	text-align: center;
+	font-size: 12px;
+	color:#fff;
+}
+.list ul li:hover .btn{
+	display: block;
+}
+.list ul li .btn .more:hover{
+	background-color:#e1251b;
+}
+
+/* 底部样式 */
+.footer{
+	border-top:1px solid #999;
+	width: 100%;
+	min-width: 1190px;
+	background-color: #e3e4e5;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+}
+/* 不同屏幕隐藏区域 */
+@media screen and (max-width:992px) {
+	
+}

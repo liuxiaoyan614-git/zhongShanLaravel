@@ -48,6 +48,13 @@
       "unicode_decimal": 58937
     },
     {
+      "icon_id": "10232763",
+      "name": "关闭",
+      "font_class": "guanbi",
+      "unicode": "e78d",
+      "unicode_decimal": 59277
+    },
+    {
       "icon_id": "11519703",
       "name": "文件",
       "font_class": "wenjian",
